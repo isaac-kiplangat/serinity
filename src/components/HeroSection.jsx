@@ -6,6 +6,7 @@ import Dominican from '../assets/dominican.jpg'
 import Mara from '../assets/tsavo.jpg'
 import Marie from '../assets/marie.jpg'
 import Kebs from '../assets/kebs.jpg'
+import { RxDividerVertical } from "react-icons/rx";
 
 
 
@@ -22,7 +23,7 @@ const HeroSection = () => {
        
        {/* reviews */}
        <div className='absolute bottom-24 w-1/3 left-20  '>
-        <p>3 days</p>
+        <p className=" my-4 font-medium text-lg text-gray-100 bg-gray-400 w-1/3 px-2 rounded-full bg-opacity-50 flex items-center gap-2">3 days  <RxDividerVertical className='text-white'/> 310 km</p>
         <div className='bg-[#111e3d] p-2 rounded-full w-1/2 flex items-center justify-between '>
           <div className='flex'>
           <img src={Marie} alt="" className='h-12 w-12 rounded-full' style={{ zIndex: 3 }} />
@@ -63,25 +64,46 @@ const HeroSection = () => {
         {/* packages ads */}
         <div className=' py-8 grid grid-cols-3 gap-12 w-full '>
           {/* Your packages ads content here */}
-          <div style={{backgroundImage: `url(${Bali})`}} className='relative h-[400px] bg-cover rounded-lg'>
-            <div className='absolute bottom-4 left-4 w-full'>
-              <h2>Nusa Penida</h2>
+          <div style={{backgroundImage: `url(${Bali})`}} className='relative h-[400px] bg-cover rounded-lg overflow-hidden'>
+            <div className='absolute bottom-0 left-0 w-full bg-gray-400 bg-opacity-40'>
+              <div className='px-4 py-2'>
+              <h2 className='text-2xl text-white font-bold'>Nusa Penida</h2>
+              <div className=' flex items-center gap-4'>
+              <p className='font-medium text-white text-sm my-4 '> 2 days</p>
+              <RxDividerVertical className='text-white'/>
+              <p className='font-medium text-white text-sm my-4 '> 223  Km </p>
+              </div>
+              </div>
 
             </div>
           </div>
 
           {/* package 2 */}
-          <div style={{backgroundImage: `url(${Dominican})`}} className=' relative h-[400px] bg-cover rounded-lg'>
-            <div className='absolute bottom-4 left-4 w-full'>
-              <h2>Nusa Penida</h2>
+          <div style={{backgroundImage: `url(${Dominican})`}} className=' relative h-[400px] bg-cover rounded-lg overflow-hidden'>
+          <div className='absolute bottom-0 left-0 w-full bg-gray-400 bg-opacity-40'>
+              <div className='px-4 py-2'>
+              <h2 className='text-2xl text-white font-bold'>Dominican Beach</h2>
+              <div className=' flex items-center gap-4'>
+              <p className='font-medium text-white text-sm my-4 '> 4 days</p>
+              <RxDividerVertical className='text-white'/>
+              <p className='font-medium text-white text-sm my-4 '> 123  Km </p>
+              </div>
+              </div>
 
             </div>
           </div>
 
           {/* package 3 */}
-          <div style={{backgroundImage: `url(${Mara})`}} className='relative h-[400px] bg-cover rounded-lg'>
-            <div className='absolute bottom-4 left-4 w-full'>
-              <h2>Nusa Penida</h2>
+          <div style={{backgroundImage: `url(${Mara})`}} className='relative h-[400px] bg-cover rounded-lg overflow-hidden'>
+           <div className='absolute bottom-0 left-0 w-full bg-gray-400 bg-opacity-40'>
+              <div className='px-4 py-2'>
+              <h2 className='text-2xl text-white font-bold'>Maasai Mara</h2>
+              <div className=' flex items-center gap-4'>
+              <p className='font-medium text-white text-sm my-4 '> 5 days</p>
+              <RxDividerVertical className='text-white'/>
+              <p className='font-medium text-white text-sm my-4 '> 823  Km </p>
+              </div>
+              </div>
 
             </div>
           </div>
