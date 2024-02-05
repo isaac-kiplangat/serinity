@@ -7,6 +7,9 @@ import Mara from '../assets/tsavo.jpg'
 import Marie from '../assets/marie.jpg'
 import Kebs from '../assets/kebs.jpg'
 import { RxDividerVertical } from "react-icons/rx";
+import { HiArrowLongRight } from "react-icons/hi2";
+import { HiArrowLongLeft } from "react-icons/hi2";
+
 
 
 
@@ -38,9 +41,15 @@ const HeroSection = () => {
        
        </div>
        {/* middle */}
-       <div className="w-32 grid place-items-center ">
+       <div className="w-32 grid place-items-center relative">
        <div className=' w-22 -translate-x-[75%] bg-red-500 p-8 rounded-full'>
           <FaPlay size={22} className='text-white'/>
+        </div>
+        <div className='absolute bottom-4 left-8 flex flex-col items-center justify-center'>
+          <div className='items-center flex justify-center flex-col'>
+          <HiArrowLongRight size={40} className='text-white'/>
+          <HiArrowLongLeft size={40}  className='text-white/60'/>
+          </div>
         </div>
        </div>
 
@@ -82,7 +91,7 @@ const HeroSection = () => {
           <div style={{backgroundImage: `url(${Dominican})`}} className=' relative h-[400px] bg-cover rounded-lg overflow-hidden'>
           <div className='absolute bottom-0 left-0 w-full bg-gray-400 bg-opacity-40'>
               <div className='px-4 py-2'>
-              <h2 className='text-2xl text-white font-bold'>Dominican Beach</h2>
+              <h2 className='text-2xl text-white font-bold'>Zanzibar</h2>
               <div className=' flex items-center gap-4'>
               <p className='font-medium text-white text-sm my-4 '> 4 days</p>
               <RxDividerVertical className='text-white'/>
